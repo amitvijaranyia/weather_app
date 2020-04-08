@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="16dp">
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Today, 17 Jan" />
+
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/tvDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        tools:background="@drawable/clear_sky_01n" />
+
+    <TextView
+        android:id="@+id/tvCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@+id/ivWeatherIcon"
+        tools:text="19\u00b0" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Drizzle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivWeatherIcon"
+        app:layout_constraintStart_toStartOf="@+id/ivWeatherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/ivWeatherIcon" />
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Budh Vihar"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCurrentTemp"
+        app:layout_constraintTop_toBottomOf="@+id/ivWeatherIcon" />
+
+    <TextView
+        android:id="@+id/tvLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="15:00:00"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCityName"
+        app:layout_constraintTop_toTopOf="@+id/tvVisibility" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Updated"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/tvLastUpdated"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastUpdated" />
+
+    <TextView
+        android:id="@+id/tvVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        tools:text="Visibility = 12km"
+        app:layout_constraintStart_toStartOf="@+id/ivWeatherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

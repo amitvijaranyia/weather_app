@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="zip_code">zip_code</string>
+    <string name="country_name">countryName</string>
+    <string name="current_weather_url">currentWeatherUrl</string>
+    <string name="forecast_weather_url">forecastWeatherUrl</string>
+
+    <!-- Used by preference_settings.xml and SettingsPreferenceFragment -->
+    <string name="weather_notifications_enabled">Weather Notifications Enabled</string>
+    <string name="weather_notifications_disabled">Weather Notifications Disabled</string>
+
+    <string name="loading_weather_data_failed">Load Unsuccessful</string>
+    <string name="loading_weather_data_success">Load Successful</string>
+
+</resources>
