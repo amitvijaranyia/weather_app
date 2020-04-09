@@ -78,7 +78,11 @@
         <Preference
             android:key="feedback"
             android:title="Send Feedback"
-            android:summary="Report technical issues or suggest new features."/>
+            android:summary="Report technical issues or suggest new features.">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:weatherappfeedback1998@gmail.com"/>
+        </Preference>
     </PreferenceCategory>
 
 </PreferenceScreen>
