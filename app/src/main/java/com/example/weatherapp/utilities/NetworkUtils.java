@@ -37,18 +37,9 @@ public class NetworkUtils {
     //parameter for language
     private static final String LANG_PARAM = "lang";
 
-
     private static final String mode = "json";
     private static final String appid = "15bb503402768b6d8b52cc9e7215f754";
 
-
-    /**
-     * This function returns the URL that uses city name and country to communicate with server.
-     *
-     * @param context
-     * @param locationQuery
-     * @return URL
-     */
     public static URL buildUrl(Context context, String locationQuery){
         Uri uri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                 .appendQueryParameter(QUERY_PARAM, locationQuery)
@@ -65,14 +56,6 @@ public class NetworkUtils {
         }
         return url;
     }
-
-    /**
-     * This function returns the URL that uses latitude and longitude of the location to communicate with server.
-     * @param context
-     * @param latitude
-     * @param longitude
-     * @return
-     */
 
     public static URL buildUrl(Context context, double latitude, double longitude) {
         Uri uri = Uri.parse(FORECAST_BASE_URL).buildUpon()
@@ -92,13 +75,6 @@ public class NetworkUtils {
         return url;
     }
 
-    /**
-     * This function returns the URL that uses zip code of the location to communicate with server.
-     * @param context
-     * @param zipCode
-     * @return
-     */
-
     public static URL buildForecastUrlWithZIP(Context context, String zipCode){
         Uri uri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                 .appendQueryParameter(ZIP_PARAM, zipCode)
@@ -113,7 +89,6 @@ public class NetworkUtils {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-//        Log.d(TAG, "buildUrlWithZIP: " + url);
         return url;
     }
 
@@ -131,8 +106,6 @@ public class NetworkUtils {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-//        Log.d(TAG, "buildUrlWithZIP: " + url);
         return url;
     }
-
 }
