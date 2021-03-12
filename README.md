@@ -16,3 +16,5 @@ provided in this activity.
 
 It can be downloaded from here: https://drive.google.com/drive/folders/1QySx-crrR-AO_XKhOXWl66greQBEF1Lq?usp=sharing 
 (It's completely safe, it does not collect any data).
+
+It is developed in Java, Android Studio.
